@@ -1,8 +1,8 @@
 # BitToro Electron GUI Wallet
 
 ### Introduction
-Loki is a private cryptocurrency based on Monero. Loki aims to provide a private data transmission layer using a second layer of Service Nodes.
-More information on the project can be found on the [website](https://bittoro.network) and in the [whitepaper](https://bittoro.network/whitepaper). Loki is an open source project, and we encourage contributions from anyone with something to offer.
+BitToro is a private cryptocurrency based on Monero. BitToro aims to provide a private data transmission layer using a second layer of Service Nodes.
+More information on the project can be found on the [website](https://bittoro.network) and in the [whitepaper](https://bittoro.network/whitepaper). BitToro is an open source project, and we encourage contributions from anyone with something to offer.
 <p align="center">
  <img src="https://raw.githubusercontent.com/KeeJef/loki-electron-gui-wallet/master/src-electron/icons/mrcuug.PNG" width="600">
 </p>
@@ -11,7 +11,7 @@ More information on the project can be found on the [website](https://bittoro.ne
 
 ### About this project
 
-This is the new electron GUI for Loki. It is open source and completely free to use without restrictions, anyone may create an alternative implementation of the Loki Electron GUI that uses the protocol and network in a compatible manner.
+This is the new electron GUI for BitToro. It is open source and completely free to use without restrictions, anyone may create an alternative implementation of the BitToro Electron GUI that uses the protocol and network in a compatible manner.
 
 Please submit any changes as pull requests to the development branch, all changes are assessed in the development branch before being merged to master, release tags are considered stable builds for the GUI.
 
