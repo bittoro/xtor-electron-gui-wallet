@@ -1,10 +1,10 @@
 {
-  "name": "loki-electron-wallet",
+  "name": "xtor-electron-wallet",
   "version": "1.2.1",
   "daemonVersion": "3.0.4",
   "description": "Modern GUI interface for Loki Currency",
-  "productName": "Loki Electron Wallet",
-  "cordovaId": "com.lokinetwork.wallet",
+  "productName": "BitToro Electron Wallet",
+  "cordovaId": "com.bittoronetwork.wallet",
   "author": "Loki",
   "private": true,
   "scripts": {

@@ -25,11 +25,11 @@ export class Backend {
 
     init (config) {
         if (os.platform() === "win32") {
-            this.config_dir = "C:\\ProgramData\\loki"
-            this.wallet_dir = `${os.homedir()}\\Documents\\Loki`
+            this.config_dir = "C:\\ProgramData\\bittoro"
+            this.wallet_dir = `${os.homedir()}\\Documents\\BitToro`
         } else {
-            this.config_dir = path.join(os.homedir(), ".loki")
-            this.wallet_dir = path.join(os.homedir(), "Loki")
+            this.config_dir = path.join(os.homedir(), ".bittoro")
+            this.wallet_dir = path.join(os.homedir(), "BitToro")
         }
 
         if (!fs.existsSync(this.config_dir)) {
@@ -45,11 +45,11 @@ export class Backend {
         const daemon = {
             type: "remote",
             p2p_bind_ip: "0.0.0.0",
-            p2p_bind_port: 22022,
+            p2p_bind_port: 11044,
             rpc_bind_ip: "127.0.0.1",
-            rpc_bind_port: 22023,
+            rpc_bind_port: 11045,
             zmq_rpc_bind_ip: "127.0.0.1",
-            zmq_rpc_bind_port: 22024,
+            zmq_rpc_bind_port: 11046,
             out_peers: -1,
             in_peers: -1,
             limit_rate_up: -1,
@@ -60,8 +60,8 @@ export class Backend {
         const daemons = {
             mainnet: {
                 ...daemon,
-                remote_host: "doopool.xyz",
-                remote_port: 22020
+                remote_host: "remote.bittoro.network",
+                remote_port: 11045
             },
             stagenet: {
                 ...daemon,
@@ -104,28 +104,12 @@ export class Backend {
 
         this.remotes = [
             {
-                host: "doopool.xyz",
-                port: "22020"
+                host: "remote.bittoro.network",
+                port: "11045"
             },
             {
-                host: "daemons.cryptopool.space",
-                port: "22023"
-            },
-            {
-                host: "node.loki-pool.com",
-                port: "18081"
-            },
-            {
-                host: "imaginary.stream",
-                port: "22023"
-            },
-            {
-                host: "nodes.hashvault.pro",
-                port: "22023"
-            },
-            {
-                host: "rpc.stakeit.io",
-                port: "22023"
+                host: "daemon.bittoro.network",
+                port: "11045"
             }
         ]
 
@@ -254,7 +238,7 @@ export class Backend {
             }
 
             if (path) {
-                const baseUrl = net_type === "testnet" ? "https://lokitestnet.com" : "https://lokiblocks.com"
+                const baseUrl = net_type === "testnet" ? "https://explorer-testnet.bittoro.network" : "https://explorer.bittoro.network"
                 const url = `${baseUrl}/${path}/`
                 require("electron").shell.openExternal(url + params.id)
             }
