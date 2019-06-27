@@ -4,7 +4,7 @@
 BitToro is a private cryptocurrency based on Monero. BitToro aims to provide a private data transmission layer using a second layer of Service Nodes.
 More information on the project can be found on the [website](https://bittoro.network) and in the [whitepaper](https://bittoro.network/whitepaper). BitToro is an open source project, and we encourage contributions from anyone with something to offer.
 <p align="center">
- <img src="https://raw.githubusercontent.com/KeeJef/loki-electron-gui-wallet/master/src-electron/icons/mrcuug.PNG" width="600">
+ <img src="https://raw.githubusercontent.com/bittoro/xtor-electron-gui-wallet/development/src-electron/icons/mrcuug.PNG" width="600">
 </p>
 
 
@@ -23,7 +23,7 @@ Please submit any changes as pull requests to the development branch, all change
 nvm use 11.9.0
 npm install -g quasar-cli
 git clone https://github.com/bittoro/xtor-electron-gui-wallet.git
-cd xtor-electron-wallet
+cd xtor-electron-gui-wallet
 cp path_to_bittoro_binaries/bittorod bin/
 cp path_to_bittoro_binaries/bittoro-wallet-rpc bin/
 npm install
