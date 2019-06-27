@@ -1,6 +1,6 @@
 <template>
 <span>
-    {{ value }} LOKI
+    {{ value }} XTOR
 </span>
 </template>
 

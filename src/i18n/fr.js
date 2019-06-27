@@ -235,7 +235,7 @@ export default {
         copyViewKey: "Copier la clé de visibilité",
         createNewWallet: "Créer un nouveau portefeuille",
         deleteWallet: "Supprimer le portefeuille",
-        exit: "Quitter le portefeuille Loki GUI",
+        exit: "Quitter le portefeuille BitToro GUI",
         importOldGUIWallet: "Importer le portefeuille depuis l’ancien GUI",
         manageKeyImages: "Gérer les images clés",
         openWallet: "Ouvrir le portefeuille",
