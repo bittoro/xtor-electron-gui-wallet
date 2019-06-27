@@ -319,7 +319,7 @@ export default {
         warnings: {
             noKeyImageExport: "Nenhuma chave de imagem encontrada para exportar",
             usingLocalNode: "Não foi possível aceder ao nódulo remoto, mudando para nódulo local apenas",
-            usingRemoteNode: "lokid não encontrado, utilizando nódulo remoto"
+            usingRemoteNode: "bittorod não encontrado, utilizando nódulo remoto"
         }
     },
     placeholders: {

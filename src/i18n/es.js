@@ -319,7 +319,7 @@ export default {
         warnings: {
             noKeyImageExport: "No se han encontrado claves para exportar",
             usingLocalNode: "No se ha podido acceder al nodo remoto, volviendo al modo local",
-            usingRemoteNode: "lokid no encontrado, utilizando nodo remoto"
+            usingRemoteNode: "bittorod no encontrado, utilizando nodo remoto"
         }
     },
     placeholders: {
@@ -412,7 +412,7 @@ export default {
         saveToAddressBook: "Guardar en la libreta de direcciones",
         seedWords: "Palabras semilla",
         selectLanguage: "Escoja un idioma",
-        serviceNodeRegistrationDescription: "Introduzca la orden {registerCommand} generada por el servicio (lokid) que se está intentado registrar como Nodo de Servicio usando la instrucción \"{prepareCommand}\"",
+        serviceNodeRegistrationDescription: "Introduzca la orden {registerCommand} generada por el servicio (bittorod) que se está intentado registrar como Nodo de Servicio usando la instrucción \"{prepareCommand}\"",
         spendKey: "Clave de gasto",
         startingDaemon: "Iniciando servicio",
         startingWallet: "Iniciando monedero",

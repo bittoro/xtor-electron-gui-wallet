@@ -28,7 +28,7 @@ export class Daemon {
     checkVersion () {
         return new Promise((resolve, reject) => {
             if (process.platform === "win32") {
-                let lokid_path = path.join(__ryo_bin, "lokid.exe")
+                let lokid_path = path.join(__ryo_bin, "bittorod.exe")
                 let lokid_version_cmd = `"${lokid_path}" --version`
                 if (!fs.existsSync(lokid_path)) { resolve(false) }
                 child_process.exec(lokid_version_cmd, (error, stdout, stderr) => {
@@ -36,7 +36,7 @@ export class Daemon {
                     resolve(stdout)
                 })
             } else {
-                let lokid_path = path.join(__ryo_bin, "lokid")
+                let lokid_path = path.join(__ryo_bin, "bittorod")
                 let lokid_version_cmd = `"${lokid_path}" --version`
                 if (!fs.existsSync(lokid_path)) { resolve(false) }
                 child_process.exec(lokid_version_cmd, { detached: true }, (error, stdout, stderr) => {
@@ -119,7 +119,7 @@ export class Daemon {
                 args.push("--stagenet")
             }
 
-            args.push("--log-file", path.join(dirs[net_type], "logs", "lokid.log"))
+            args.push("--log-file", path.join(dirs[net_type], "logs", "bittorod.log"))
 
             if (daemon.rpc_bind_ip !== "127.0.0.1") { args.push("--confirm-external-bind") }
 
@@ -139,9 +139,9 @@ export class Daemon {
             portscanner.checkPortStatus(this.port, this.hostname).catch(e => "closed").then(status => {
                 if (status === "closed") {
                     if (process.platform === "win32") {
-                        this.daemonProcess = child_process.spawn(path.join(__ryo_bin, "lokid.exe"), args)
+                        this.daemonProcess = child_process.spawn(path.join(__ryo_bin, "bittorod.exe"), args)
                     } else {
-                        this.daemonProcess = child_process.spawn(path.join(__ryo_bin, "lokid"), args, {
+                        this.daemonProcess = child_process.spawn(path.join(__ryo_bin, "bittorod"), args, {
                             detached: true
                         })
                     }

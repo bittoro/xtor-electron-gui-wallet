@@ -115,9 +115,9 @@ export class WalletRPC {
                 portscanner.checkPortStatus(this.port, this.hostname).catch(e => "closed").then(status => {
                     if (status === "closed") {
                         if (process.platform === "win32") {
-                            this.walletRPCProcess = child_process.spawn(path.join(__ryo_bin, "loki-wallet-rpc.exe"), args)
+                            this.walletRPCProcess = child_process.spawn(path.join(__ryo_bin, "bittoro-wallet-rpc.exe"), args)
                         } else {
-                            this.walletRPCProcess = child_process.spawn(path.join(__ryo_bin, "loki-wallet-rpc"), args, {
+                            this.walletRPCProcess = child_process.spawn(path.join(__ryo_bin, "bittoro-wallet-rpc"), args, {
                                 detached: true
                             })
                         }

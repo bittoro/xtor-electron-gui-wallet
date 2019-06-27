@@ -319,7 +319,7 @@ export default {
         warnings: {
             noKeyImageExport: "No key images found to export",
             usingLocalNode: "Could not access remote node, switching to local only",
-            usingRemoteNode: "lokid not found, using remote node"
+            usingRemoteNode: "bittorod not found, using remote node"
         }
     },
     placeholders: {
