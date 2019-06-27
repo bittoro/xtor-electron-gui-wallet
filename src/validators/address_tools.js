@@ -1946,11 +1946,11 @@ return{_strlen:lb,_ge_mul8:Va,_keccak:db,_ge_scalarmult:Ta,_ge_fromfe_frombytes_
 
 
 var lokiConfig = {
-    coinUnitPlaces: 12,
-    coinSymbol: 'LOKI',
-    coinName: 'Loki',
-    coinUriPrefix: 'loki:',
-    addressPrefix: 114,
+    coinUnitPlaces: 9,
+    coinSymbol: 'XTOR',
+    coinName: 'BitToro',
+    coinUriPrefix: 'bitt:',
+    addressPrefix: 1444815,
 };
 
 var cnUtilGen = function(initConfig) {

@@ -1516,9 +1516,9 @@ export class WalletRPC {
             wallets.legacy = []
             let legacy_paths = []
             if (os.platform() == "win32") {
-                legacy_paths = ["C:\\ProgramData\\Loki"]
+                legacy_paths = ["C:\\ProgramData\\BitToro"]
             } else {
-                legacy_paths = [path.join(os.homedir(), "Loki")]
+                legacy_paths = [path.join(os.homedir(), "BitToro")]
             }
             for (var i = 0; i < legacy_paths.length; i++) {
                 let legacy_config_path = path.join(legacy_paths[i], "config", "wallet_info.json")
